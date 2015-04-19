@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- This file contains the submission material for the Udacity Nanodegree
+Introduction to Programming by Jes H. -->
+
+<html>
+<head>
+	<!-- Had to add this charset thing because some characters didn't look right in my browser -->
+	<meta charset="UTF-8">
+ 	<title>Jes | Notes from Udacity Nanodegree Intro to Programming | Stages 1</title>
+ 	<!-- Here goes my CSS embedded directly in my HTML file. I find it easier than
+ 	calling my styling file externally for now. Maybe that'll change with larger projects. -->
+ 	<style>
+ 	/* Comment markers in CSS are a bit different. Well, one more thing to remember */
+ 		*{box-sizing: border-box;}
+ 		body {
+ 			background-color: #ffffff;
+ 			font-family: Helvetica;
+ 			max-width: 750px;
+ 			/* display: flex; */ /* Enable to eliminate the block behaviour of div! */
+ 			}
+ 		.lesson {
+			color: #CBCA70;
+			background-color: #23324C;
+			padding: 10px;
+ 			border-radius: 15px;
+ 			}
+ 		.concept {
+ 			background-color: #3A547F;
+			padding: 4px;
+			margin: 10px;
+			border-radius: 8px;
+			}
+		.concept-description {margin: 6px;}
+ 		a {color: #ffffff;}
+ 		h1 {}
+ 		h2 {
+ 			color: #ffffff;
+ 			margin: 10px;
+ 			}
+ 		h3 {
+ 			color: #9AADCB;
+ 			font-size: 20px;
+ 			margin: 4px;
+ 			text-align: left;
+	 		}
+ 	</style>
+</head>
+
+<body>
+<h1>Important Nanodegree Concepts</h1>
+<!-- First main div element contains my Stage 1, Lesson 1 notes -->
+<div class="lesson">
+	<h2>Lesson 1: The Basics of the Web and HTML</h2>
+	<!-- Subsequent notes also get enclosed in their own div element -->
+	<div class="concept">
+		<h3>Webpages</h3>
+		<div class="concept-description">
+			<p>
+				Text doc written using HTML – hypertext markup language.
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Coding</h3>
+		<div class="concept-description">
+			<p>
+				Telling computers what to do in a language they understand – e.g. through HTML.
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Computers are stupid</h3>
+		<div class="concept-description">
+			<p>
+				Coding in language with strict rules implies the computer that interprets is prone to misunderstand when the human coder makes errors. There’s no “human factor” that understands the mistake and the computer act stupid when interpreting an error.
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Look it up</h3>
+		<div class="concept-description">
+			<p>
+				Too much detail. No problem, focus on the larger ideas and look up the details (correct html tags etc.) on the internet.
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>HTML lingo</h3>
+		<div class="concept-description">
+			<p>
+				Tags (some require closing brackets, some don’t), inline tags, block tags, void tags, elements, attributes.
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>HTML structure</h3>
+		<div class="concept-description">
+			<p>
+				Doctype, head (meta-data, <a href="http://www.w3.org/Style/CSS/">css</a>, <a href="http://www.w3schools.com/js/">javascript</a>), body (the fun stuff).
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Images</h3>
+		<div class="concept-description">
+			<p>
+				Img tags are <img src="http://dbastatic.dk/pictures/pictures/52/5d/95e7-e7f7-4d80-bc74-12dfc60b09e2.jpg?preset=thumbnail" alt="Inliners. Get it? A-ha. A-hahaha :-|"> inline (as opposed to block elements like those defined with <em>div</em> etc.
+			</p>
+		</div>
+	</div>
+</div>
+<!-- Second main div element contains my Stage 1, Lesson 2 notes -->
+<div class="lesson">
+	<h2>Lesson 2: Creating a Structured Document</h2>
+	<div class="concept">
+		<h3>Structure, structure, structure</h3>
+		<div class="concept-description">
+			<p>
+				HTML is the language that provides the backbone  of the webpage's content in a branched order - the so-called DOM or Document Object Model. This clever approach makes it highly adaptable in a controlled way by applying formatting to the backbone elements separately - namely via CSS. It enables me to apply a complete "style make-over" to collective parts of a webpage with minimum effort and time use.
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Styling</h3>
+		<p>
+			On such a "style make-over" the outputted webpage looks different in the browser. The HTML (structure) remains unchanged while the CSS (style) changes and thus controls how the elements of the page appear on screen.
+		</p>
+	</div>
+	<div class="concept">
+		<h3>Boxification</h3>
+		<div class="concept-description">
+			<p>
+				It appears that all elements in HTML is contained in rectangular boxes - their dimensions and other parameters may be defined via separate styles. This is another clever part of HTML as it enables easy page adaptation to various screen sizes, browsers and digital platforms in general.<br>
+				Boxes are created in HTML with the <em>div</em>-tag (but not around the <em>span</em>-tag). A box inside a box is done by enclosing one <em>div</em>-tag inside another. Clever! So when I break down a webpage as it looks in the browser and "read" the invisible "boxes", I can now copy-cat these "boxes" into my own HTML by building a hierarchy of <em>div</em>-tags.
+			</p>
+		</div>
+	</div>
+</div>
+<!-- Third main div element contains my Stage 1, Lesson 3 notes -->
+<div class="lesson">
+	<h2>Lesson 3: Adding CSS Style and HTML Structure</h2>
+	<div class="concept">
+		<h3>The missing link</h3>
+		<div class="concept-description">
+			<p>
+				Styling by CSS is linked to HTML elements by labeling the HTML elements (tags) with <em>class</em> (and <em>id</em>?) attributes. This must be the stuff that makes the magic happen.
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Cascading and inheritance</h3>
+		<div class="concept-description">
+			<p>
+				HTML structure is DOM, and CSS is applied cascading throughout the DOM in turn dictating the order of the applied styling.	The CSS for my HTML page can be "called" or referenced into my HTML from a separately saved CSS file. It can also be written directly into the beginning of my HTML. I guess the latter is great for smaller projects while the former seems very useful for big projects with tons of HTML files all calling the same external CSS file.
+			</p>
+			<p>
+				CSS applied to an element is inherited to the descendants of that element, but there are differences in how e.g. text- and box-properties are inherited. This seems awesome and it all gets more logical and useful at this stage. There's just the thing about remembering all of this...
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Repetition</h3>
+		<div class="concept-description">
+			<p>
+				Programming seems a lot about avoiding unnecessary repetition. CSS together with the inherent structures of HTML and CSS are very efficient at that. E.g. make one CSS file and call this from a bunch of HTML files to easy apply a uniform layout to all pages in no time. The rules of inheritance in CSS also helps programmers write less code because they can simply apply style to a higher-level or ancestor-level element.
+			</p>
+		</div>
+	</div>
+</div>
+<!-- Fourth main div element contains my Stage 1 learnings I got on top -->
+<div class="lesson">
+	<h2>Bonus take-aways from Stage 1 lessons</h2>
+	<div class="concept">
+		<!-- Bonus learnings from Stage 1 -->
+		<h3>Bonus learning 1</h3>
+		<div class="concept-description">
+			<p>
+				I learned how to make use of the browser's Developer Tool (source HTML+CSS) to "read" (mouse-over) HTML elements and see their respective boxes in real-time on screen. That was an eye-opener!
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Bonus learning 2</h3>
+		<div class="concept-description">
+			<p>
+				The concept of keeping content and style separate seems to me somewhat similar to having unformatted text in MS Word with separate formatting applied in separate "Styles" templates, which likewise enables swift changing of a full Word document between various lay-outs (incl. colors schemes, line spacing, font, font size etc.).
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Bonus learning 3</h3>
+		<div class="concept-description">
+			<p>
+				I learned how to set-up Sublime Text. I now have my own humble developer environment. Success! \(^_^)/ It was easy to make it recognize and color code HTML syntax but it took me a while to make it view my code in a browser with a click (Sublime Text 3 on Windows 8).
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<h3>Bonus learning 4</h3>
+		<div class="concept-description">
+			<p>
+				There were links to very resourceful webpages I surely will be going back to often for help. <a href="http://stackoverflow.com/">Stackoverflow</a>, <a href="https://developer.mozilla.org/en-US/docs/Web">MDN CSS and HTML reference</a>, <a href="https://css-tricks.com/how-css-selectors-work/">CSS-tricks</a>, <a href="http://validator.w3.org/#validate_by_input">W3C HTML Validation</a>.
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<!-- Things I didn't quite grasp at this level -->
+		<h3>Say what?</h3>
+		<div class="concept-description">
+			<p>
+				One of the earlier lessons made me fiddle with styles of some HTML- and CSS-generated circles. I don't understand what makes the circles circular, but hopefully that'll come...
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
